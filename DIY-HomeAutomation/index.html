@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Home Automation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #bg_pics{
+            background-repeat: no-repeat;
+            max-width: 100%;
+        }
+
+        #h2tag{
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Automation System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="ecommerce.html">Shop Routers</a></li>
+                <li><a href="cart.php">Cart</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">
+                        <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'Account'; ?>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="edit_profile.php">Edit Profile</a>
+                        <a href="logout.php">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Home Automation System</h2>
+
+        <img id="bg_pics" src="images/Bg-1.png" alt="Background-1">
+        <br>
+        <img id="bg_pics" src="images/Bg-2.png" alt="Background-2">
+        <br>
+        <img id="bg_pics" src="images/Bg-3.png" alt="Background-3">
+        <br>
+        <h2 id="h2tag" >Smart Lights that suit your mood right...</h2>
+        <img id="bg_pics" src="images/Bg-4.png" alt="Background-4">
+        <br>
+        <img id="bg_pics" src="images/Bg-5.png" alt="Background-5">
+    </main>
+    <footer>
+        <p>&copy; 2024 Home Automation System</p>
+    </footer>
+</body>
+</html>
